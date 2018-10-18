@@ -29,7 +29,7 @@ I am good at Linux, TCP/IP, Nginx, PostgreSQL and large-scale clustering.
 
 ### Postgresql failover agent
 
-*2018.07 - till now, Ecrission*
+*2018 Ecrission*
 
 *written in golang*
 
@@ -44,7 +44,7 @@ When the service is failed, it does the failover procedure:
 
 ### Postgresql cross-dc replication
 
-*2018.07 - till now, Ecrission*
+*2018 Ecrission*
 
 *written in golang*
 

@@ -12,6 +12,7 @@ I am good at Linux, TCP/IP, Nginx, PostgreSQL and large-scale clustering.
 
 * [Postgresql failover agent](#postgresql-failover-agent)
 * [Postgresql cross-dc replication](#postgresql-cross-dc-replication)
+* [Openresty worker-thread patch](#openresty-worker-thread-patch)
 * [Mysql Proxy](#mysql-proxy)
 * [GoKv](#gokv)
 * [Distributed Object store](#distributed-object-store)
@@ -54,6 +55,24 @@ Based on the replication slot, it replicates data changes between postgresql dep
 * The replication slot commit status is persistent between failover
 * The default conflict policy is timestamp based last-writer-wins
 * You could write stored procedure to do customized conflict handling
+
+### Openresty worker-thread patch
+
+*2017 open-source project*
+
+The Nginx is multi-processes arch, and the luajit is single-threaded vm, so based on them, the openresty has below limitations:
+
+* you cannot do blocking stuff, otherwise something get sucks, e.g. cosocket faked timeout
+  * CPU-bound tasks
+  * Block device IO tasks, e.g. written to files
+  * Call and wait external programs
+  * Lua libraries not based on cosocket
+* unable to balance requests after the request come in specific process
+* unsafe to do structure operations upon the shared memory
+
+To overcome the blocking due to CPU and BlockIO, which is normal cases we need, e.g. we need to calculate the md5 checksum, we need to do logging or written large data to files, I write a simple patch to enable worker threads for these tasks: 
+
+https://github.com/kingluo/lua-nginx-module/tree/worker-thread
 
 ### Mysql Proxy
 

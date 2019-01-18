@@ -4,9 +4,21 @@
 
 My name is JinHua Luo (罗锦华).
 
-I am a senior C/C++/Lua/Golang programmer, with more than 12 years development experience.
+I am a senior C/C++/Golang/Java/Lua programmer and system architect, with more than 13 years development experience.
 
-I am good at Linux, TCP/IP, Nginx, PostgreSQL and large-scale clustering.
+I am good at Linux, TCP/IP, Nginx, PostgreSQL, Cassandra.
+
+## Education
+
+* bachelor, South China Agricultural University
+
+## Career
+
+* 2018.07 - till now, Ericsson
+* 2017.03 - 2018.06, Kugou Music
+* 2016.08 - 2017, YY
+* 2008 - 2016, Elephant Talk
+* 2005 - 2008, Guangdong Linux Center
 
 ## Projects
 

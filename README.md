@@ -6,7 +6,17 @@ My name is JinHua Luo (罗锦华).
 
 I am a senior C/C++/Golang/Java/Lua programmer and system architect, with more than 13 years development experience.
 
-I am good at Linux, TCP/IP, Nginx, PostgreSQL, Cassandra.
+I am good at Linux, TCP/IP, Nginx, PostgreSQL, Cassandra, Redis.
+
+## Location
+
+Guangzhou, China
+
+## Email
+
+home_king@163.com
+
+luajit.io@gmail.com
 
 ## Education
 

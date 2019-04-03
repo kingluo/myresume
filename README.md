@@ -32,6 +32,7 @@ luajit.io@gmail.com
 
 ## Projects
 
+* [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
 * [Postgresql failover agent](#postgresql-failover-agent)
 * [Postgresql cross-dc replication](#postgresql-cross-dc-replication)
 * [Openresty worker-thread patch](#openresty-worker-thread-patch)
@@ -49,6 +50,20 @@ luajit.io@gmail.com
 * [High performance CORBA implementation](#high-performance-corba-implementation)
 * [Server Bootstrap CD](#server-bootstrap-cd)
 * [Others](#others)
+
+### Cassandra Encryption query handler
+
+*2018 Ecrission*
+
+*written in Java*
+
+Implements encryption via Cassandra Query Handler.
+
+* encrypt specific fields of tables transparently from client
+* enable encrypt variant implmentations, e.g. aes, fuzz
+* only the authorized users could access the encrypted fields
+* support alias and composite types
+* enable configuration updates on runtime
 
 ### Postgresql failover agent
 

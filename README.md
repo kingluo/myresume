@@ -53,7 +53,7 @@ luajit.io@gmail.com
 
 ### Cassandra Encryption query handler
 
-*2018 Ecrission*
+*2019 Ecrission*
 
 *written in Java*
 

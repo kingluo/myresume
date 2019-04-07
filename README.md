@@ -24,7 +24,7 @@ luajit.io@gmail.com
 
 ## Career
 
-* 2018 - till now, Ericsson
+* 2018 - 2019, Ericsson
 * 2017 - 2018, Kugou Music
 * 2008 - 2016, Elephant Talk
 * 2005 - 2008, Guangdong Linux Center

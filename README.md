@@ -24,16 +24,14 @@ luajit.io@gmail.com
 
 ## Career
 
-* 2018.07 - till now, Ericsson
-* 2017.03 - 2018.06, Kugou Music
-* 2016.08 - 2017, YY
+* 2018 - till now, Ericsson
+* 2017 - 2018, Kugou Music
 * 2008 - 2016, Elephant Talk
 * 2005 - 2008, Guangdong Linux Center
 
 ## Projects
 
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
-* [Postgresql failover agent](#postgresql-failover-agent)
 * [Postgresql cross-dc replication](#postgresql-cross-dc-replication)
 * [Openresty worker-thread patch](#openresty-worker-thread-patch)
 * [Mysql Proxy](#mysql-proxy)
@@ -64,21 +62,6 @@ Implements encryption via Cassandra Query Handler.
 * only the authorized users could access the encrypted fields
 * support alias and composite types
 * enable configuration updates on runtime
-
-### Postgresql failover agent
-
-*2018 Ecrission*
-
-*written in golang*
-
-It uses consul to health checking the postgresql service.
-
-When the service is failed, it does the failover procedure:
-
-* ensure the slaves pull and apply the lastest WAL logs
-* choose the best slave (with lastest WAL applied) as new master
-* promote the new master
-* update the consule service definition
 
 ### Postgresql cross-dc replication
 

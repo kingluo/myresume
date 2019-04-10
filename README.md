@@ -51,7 +51,7 @@ luajit.io@gmail.com
 
 ### Cassandra Encryption query handler
 
-*2019 Ecrission*
+*2018 Ecrission*
 
 *written in Java*
 
@@ -65,7 +65,7 @@ Implements encryption via Cassandra Query Handler.
 
 ### Postgresql cross-dc replication
 
-*2018 Ecrission*
+*2019 Personal project*
 
 *written in golang*
 
@@ -73,8 +73,8 @@ Based on the replication slot, it replicates data changes between postgresql dep
 
 * Similiar to BDR, but it do not depends on specific postgresql version and non-invasive
 * The replication slot commit status is persistent between failover
-* The default conflict policy is timestamp based last-writer-wins
-* You could write stored procedure to do customized conflict handling
+* Configurable sql replay template (based on go template and go plugin)
+* Conflict resolution is extendable, last-writer-wins based on transaction timestamp by default
 
 ### Openresty worker-thread patch
 

@@ -31,9 +31,8 @@ luajit.io@gmail.com
 
 ## Projects
 
-* [pgcat](#pgcat)
+* [pgcat - Enhanced postgresql logical replication](#pgcat)
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
-* [Postgresql cross-dc replication](#postgresql-cross-dc-replication)
 * [Openresty worker-thread patch](#openresty-worker-thread-patch)
 * [Mysql Proxy](#mysql-proxy)
 * [GoKv](#gokv)
@@ -57,6 +56,8 @@ luajit.io@gmail.com
 https://github.com/kingluo/pgcat
 
 Enhanced postgresql logical replication.
+
+Similiar to BDR, but it do not depends on specific postgresql version and non-invasive.
 
 The built-in logicial replication has below shortages:
 
@@ -91,19 +92,6 @@ Implements encryption via Cassandra Query Handler.
 * only the authorized users could access the encrypted fields
 * support alias and composite types
 * enable configuration updates on runtime
-
-### Postgresql cross-dc replication
-
-*2019 Personal project*
-
-*written in golang*
-
-Based on the replication slot, it replicates data changes between postgresql deployments.
-
-* Similiar to BDR, but it do not depends on specific postgresql version and non-invasive
-* The replication slot commit status is persistent between failover
-* Configurable sql replay template (based on go template and go plugin)
-* Conflict resolution is extendable, last-writer-wins based on transaction timestamp by default
 
 ### Openresty worker-thread patch
 

@@ -31,6 +31,7 @@ luajit.io@gmail.com
 
 ## Projects
 
+* [pgcat](#pgcat)
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
 * [Postgresql cross-dc replication](#postgresql-cross-dc-replication)
 * [Openresty worker-thread patch](#openresty-worker-thread-patch)
@@ -48,6 +49,34 @@ luajit.io@gmail.com
 * [High performance CORBA implementation](#high-performance-corba-implementation)
 * [Server Bootstrap CD](#server-bootstrap-cd)
 * [Others](#others)
+
+### pgcat
+
+*2019 open-source project*
+
+https://github.com/kingluo/pgcat
+
+Enhanced postgresql logical replication.
+
+The built-in logicial replication has below shortages:
+
+* only support base table as replication target
+* do not filter any origin, which will cause bi-directional dead loop
+* could not do table name mapping
+* no conflict resolution
+
+pgcat makes below enhancements:
+
+* supports any table type as replication target
+e.g. view, fdw, partitioned table, citus distributed table
+* only replicates local changes
+so that you could make bi-directional replication,
+e.g. replicates data between two datacenter
+* table name mapping
+* optional lww (last-writer-win) conflict resolution
+* save replication progress in table, so that it would be logged
+when subscriber failovers, it would retain the progress. In contrast,
+the built-in logical replication of pg saves the progress in non-logged file.
 
 ### Cassandra Encryption query handler
 

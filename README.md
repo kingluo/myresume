@@ -31,6 +31,7 @@ luajit.io@gmail.com
 
 ## Projects
 
+* [routerify-lite](#routerify-lite)
 * [pgcat - Enhanced postgresql logical replication](#pgcat)
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
 * [Openresty worker-thread patch](#openresty-worker-thread-patch)
@@ -48,6 +49,16 @@ luajit.io@gmail.com
 * [High performance CORBA implementation](#high-performance-corba-implementation)
 * [Server Bootstrap CD](#server-bootstrap-cd)
 * [Others](#others)
+
+### routerify-lite
+
+*open-source project*
+
+Routerify-lite is a simplified but faster version of [Routerify](https://github.com/routerify/routerify).
+
+It only provides below functions:
+* path matching
+* error handling
 
 ### pgcat
 

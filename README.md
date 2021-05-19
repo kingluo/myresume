@@ -54,6 +54,8 @@ luajit.io@gmail.com
 
 *open-source project*
 
+https://github.com/kingluo/routerify-lite
+
 Routerify-lite is a simplified but faster version of [Routerify](https://github.com/routerify/routerify).
 
 It only provides below functions:

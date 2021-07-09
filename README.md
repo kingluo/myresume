@@ -4,7 +4,7 @@
 
 My name is JinHua Luo (罗锦华).
 
-I am a senior C/C++/Golang/Java/Lua programmer and system architect, with more than 13 years development experience.
+I am a senior C/C++/Golang/Rust/Java/Lua programmer and system architect, with 16 years development experience.
 
 I am good at Linux, TCP/IP, Nginx, PostgreSQL, Cassandra, Redis.
 
@@ -58,9 +58,15 @@ https://github.com/kingluo/routerify-lite
 
 Routerify-lite is a simplified but faster version of [Routerify](https://github.com/routerify/routerify).
 
-It only provides below functions:
-* path matching
+It only provides the below functions:
+* path matching (including `:param` segment captures)
+
+The path matching could be done by RegexSet or HashMap.
+It would use RegexSet if the path contains `*` or `:param`. Otherwise, HashMap would be used.
+
 * error handling
+
+The error handler would translate the request into a response in case of an error from the route handler.
 
 ### pgcat
 

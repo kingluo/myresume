@@ -128,7 +128,7 @@ The Nginx is multi-processes arch, and the luajit is single-threaded vm, so base
 
 To overcome the blocking due to CPU and BlockIO, which is normal cases we need, e.g. we need to calculate the md5 checksum, we need to do logging or written large data to files, I write a simple patch to enable worker threads for these tasks: 
 
-https://github.com/kingluo/lua-nginx-module/tree/worker-thread
+https://github.com/openresty/lua-nginx-module#ngxrun_worker_thread
 
 ### Mysql Proxy
 

@@ -112,21 +112,16 @@ Implements encryption via Cassandra Query Handler.
 * support alias and composite types
 * enable configuration updates on runtime
 
-### Openresty worker-thread patch
+### Openresty worker-thread API
 
 *2017 open-source project*
 
-The Nginx is multi-processes arch, and the luajit is single-threaded vm, so based on them, the openresty has below limitations:
+This API is useful when you need to execute the below types of tasks:
 
-* you cannot do blocking stuff, otherwise something get sucks, e.g. cosocket faked timeout
-  * CPU-bound tasks
-  * Block device IO tasks, e.g. written to files
-  * Call and wait external programs
-  * Lua libraries not based on cosocket
-* unable to balance requests after the request come in specific process
-* unsafe to do structure operations upon the shared memory
-
-To overcome the blocking due to CPU and BlockIO, which is normal cases we need, e.g. we need to calculate the md5 checksum, we need to do logging or written large data to files, I write a simple patch to enable worker threads for these tasks: 
+* CPU bound task, e.g. do md5 calculation
+* File I/O task
+* Call `os.execute()` or blocking C API via `ffi`
+* Call external Lua library not based on cosocket or nginx
 
 https://github.com/openresty/lua-nginx-module#ngxrun_worker_thread
 

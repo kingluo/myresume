@@ -179,7 +179,7 @@ luajit.io simulates nginx architecture, including master-workers model, ip/port/
 
 And, the API is compatible with ngx_lua, including exec/redirect flow control, shared memory dictionary, dfa-pattern socket read, enhanced coroutine api, etc, so that luajit.io could reuse almost all lua-resty-* libraries directly (with some trivial naming changes).
 
-See http://luajit.io for detail.
+See https://github.com/kingluo/luajit.io for detail.
 
 ### Image Server Cluster Refactoring
 

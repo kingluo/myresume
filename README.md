@@ -34,7 +34,7 @@ luajit.io@gmail.com
 * [routerify-lite](#routerify-lite)
 * [pgcat - Enhanced postgresql logical replication](#pgcat)
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
-* [Openresty worker-thread patch](#openresty-worker-thread-patch)
+* [Openresty worker-thread api](#openresty-worker-thread-api)
 * [Mysql Proxy](#mysql-proxy)
 * [GoKv](#gokv)
 * [Distributed Object store](#distributed-object-store)

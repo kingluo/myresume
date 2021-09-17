@@ -36,7 +36,6 @@ luajit.io@gmail.com
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
 * [Openresty worker-thread api](#openresty-worker-thread-api)
 * [Mysql Proxy](#mysql-proxy)
-* [GoKv](#gokv)
 * [Distributed Object store](#distributed-object-store)
 * [luajit.io](#luajitio)
 * [Image Server Cluster Refactoring](#image-server-cluster-refactoring)
@@ -136,20 +135,6 @@ https://github.com/openresty/lua-nginx-module#ngxrun_worker_thread
 * Sharding (supports perpared statement)
 * Data re-balancing among Nodes
 * Configuration and Metadata stored on zookeeper, could be changed on runtime
-
-### GoKv
-
-*2017-2018 KuGou Music*
-
-*written in golang*
-
-* Use rocksdb as backend, with lrucache to avoid CAS overhead and improve read efficiency
-* Use zookeeper to store meta data, instead of gossip
-* Use manual sharding, in redis slots, so that we could define replica groups and expand the cluster capacity in flexible way
-* Provides restful http 1.1 API
-* Use grpc as node communication
-* Support multi-datacenter
-* Support list, map, set
 
 ### Distributed Object store
 

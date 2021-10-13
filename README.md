@@ -6,7 +6,7 @@ My name is JinHua Luo (罗锦华).
 
 I am a senior C/C++/Golang/Rust/Lua programmer and system architect, with 16 years development experience.
 
-I am good at Linux, TCP/IP, Nginx, OpenResty, PostgreSQL, Redis.
+I am good at Linux, TCP/IP, Nginx, OpenResty, PostgreSQL.
 
 ## Location
 

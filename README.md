@@ -36,7 +36,6 @@ luajit.io@gmail.com
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
 * [Openresty worker-thread api](#openresty-worker-thread-api)
 * [Mysql Proxy](#mysql-proxy)
-* [Distributed Object store](#distributed-object-store)
 * [luajit.io](#luajitio)
 * [Image Server Cluster Refactoring](#image-server-cluster-refactoring)
 * [Diameter Route Agent](#diameter-route-agent)
@@ -135,18 +134,6 @@ https://github.com/openresty/lua-nginx-module#ngxrun_worker_thread
 * Sharding (supports perpared statement)
 * Data re-balancing among Nodes
 * Configuration and Metadata stored on zookeeper, could be changed on runtime
-
-### Distributed Object store
-
-*2017-2018 KuGou Music*
-
-*written in golang*
-
-It mimic the Amazon S3, providing http restful file object service.
-
-It uses mysql master-master as metadata stroage, openresty as API server, and high performance backend file system.
-
-The backend file system supports both huge small files and big files, written in golang.
 
 ### luajit.io
 

@@ -190,8 +190,6 @@ Diameter Route Agent is like a full functional IP router, but it's diameter mess
 * message routing logic, e.g. round-robin, weighted load-balance
 * message mangling just like what iptables does
 
-The Diameter Stack is written in C++, but it integrates restful web service component written in golang into the stack, so that you could do script hot-updating, configuration and statistics quering on the fly.
-
 ### GSM SMSC
 
 *2014-2015 Elephanttalk*
@@ -202,12 +200,6 @@ The SMSC sits between the GSM network and the Internet. For the GSM, it communca
 
 The PostgreSQL is used to store persistent data, e.g. sms and processing records, And it also do the message delivery scheduling, handling retry rules, routing rules and barring rules. The database would pg_notify the protocol adapter to do the delivery task. Table partitioning is used to archive history messages in month. The logic is written in pl/pgsql.
 
-And I design and implement some extra components:
-
-* cdr kafka client
-* convenient restful API to access the SMSC, e.g. send/receive short message
-* db benchmark tool written in golang
-
 ### CDMA SSP
 
 *2014-2015 Elephanttalk*
@@ -216,7 +208,7 @@ CDMA SSP is service switching point, which connects to the SCP to apply pre-paid
 
 The lightspot of this project is that I embed the luajit upon the low-level protocol stack, so that we could implement the business logics in pure lua. The system is then extensible at ease for any usecase.
 
-I implement the WIN protocol (CDMA intelligent network) in the SIGTRAN stack, with API exported via OCRBA. We have ton of test cases, while C lanuage is not so productive. The lua is good embedding language, simple but powerful. And the luajit's ffi could access the idl generated structures without conversion. Then I decide to wrap the whole ssp core with lua API.
+I implement the WIN protocol (CDMA intelligent network) in the SIGTRAN stack, with API exported via CORBA. We have ton of test cases, while C lanuage is not so productive. The lua is good embedding language, simple but powerful. And the luajit's ffi could access the idl generated structures without conversion. Then I decide to wrap the whole ssp core with lua API.
 
 Just like ngx_lua, the CORBA C API (generated from the idl) are asynchronous, but the lua API is coroutine based, synchronous and nonblocking. The lua API is high-level, which may involves multiple low-level CORBA operations invocations, for example, opening dialog, sending operatioin, handleing operation callback, closing dialog. The core handles all low-level stuff, e.g. the dialog management, the state machine, and the memory management.
 

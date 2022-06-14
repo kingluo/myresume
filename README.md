@@ -55,7 +55,7 @@ https://github.com/kingluo/pgcat
 
 Enhanced postgresql logical replication.
 
-Similiar to BDR, but it do not depends on specific postgresql version and non-invasive.
+Similiar to BDR, but it does not depends on specific postgresql version and non-invasive.
 
 The built-in logicial replication has below shortages:
 

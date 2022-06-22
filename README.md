@@ -57,7 +57,7 @@ Enhanced postgresql logical replication.
 
 Similiar to [BDR](https://www.enterprisedb.com/docs/bdr/latest/), but it does not depend on specific postgresql version and non-invasive.
 
-The built-in logicial replication has below shortages:
+The postgresql built-in logicial replication has below shortages:
 
 * only support base table as replication target
 * do not filter any origin, which will cause bi-directional dead loop

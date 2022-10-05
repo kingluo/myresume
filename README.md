@@ -4,7 +4,7 @@
 
 My name is JinHua Luo (罗锦华).
 
-I am a senior C/C++/Python/Golang/Lua/SQL/Bash programmer and system architect, with 16 years development experience.
+I am a senior C/C++/Python/Golang/Lua/SQL/Bash programmer and system architect, with 17 years development experience.
 
 I am good at Linux, TCP/IP, Nginx, OpenResty, PostgreSQL.
 
@@ -20,10 +20,12 @@ luajit.io@gmail.com
 
 ## Education
 
-* bachelor, South China Agricultural University
+* Bachelor, Electronic Information Engineering, South China Agricultural University
 
 ## Career
 
+* 2022 [API7](https://api7.ai/)
+* 2019 - 2022, PostgreSQL consultant
 * 2018 - 2019, Ericsson
 * 2017 - 2018, Kugou Music
 * 2008 - 2016, Elephant Talk
@@ -31,6 +33,8 @@ luajit.io@gmail.com
 
 ## Projects
 
+* [pg_watch_demo - re-implement an complete (even better) etcd watch mechanism in postgresql](#pg_watch_demo)
+* [lua-resty-inspect - make dynamic and arbitrary breakpoint in your nginx lua code and inspect the info](#lua-resty-inspect)
 * [pgcat - Enhanced postgresql logical replication](#pgcat)
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
 * [Openresty worker-thread api](#openresty-worker-thread-api)
@@ -46,6 +50,37 @@ luajit.io@gmail.com
 * [High performance CORBA implementation](#high-performance-corba-implementation)
 * [Server Bootstrap CD](#server-bootstrap-cd)
 * [Others](#others)
+
+
+### pg_watch_demo
+
+*2022 open-source project*
+
+https://github.com/kingluo/pg_watch_demo
+
+With trigger and notify, you could re-implement an complete (even better) etcd watch mechanism in postgresql.
+
+It mimics below etcd features:
+
+* watch
+* read value in historical data, i.e. get key by revision
+* set key
+* del key
+* compact, either by revision or date retention
+
+### lua-resty-inspect
+
+*2022 open-source project*
+
+https://github.com/kingluo/lua-resty-inspect/
+
+It's useful to set arbitrary breakpoint in any lua file to inspect the context infomation, e.g. print local variables if some condition satisfied.
+
+In this way, you don't need to modify the source codes of your project, and just get diagnose infomation on demand, i.e. dynamic logging.
+
+This library supports setting breakpoints within both interpretd function and jit compiled function. The breakpoint could be at any position within the function. The function could be global/local/module/ananymous.
+
+It works for luajit2.1 or lua5.1.
 
 ### pgcat
 

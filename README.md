@@ -22,6 +22,8 @@ luajit.io@gmail.com
 
 https://github.com/kingluo
 
+http://luajit.io
+
 https://www.zhihu.com/people/jinhua-luo-94
 
 ## Education

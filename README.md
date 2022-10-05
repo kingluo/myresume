@@ -18,6 +18,12 @@ home_king@163.com
 
 luajit.io@gmail.com
 
+## Links
+
+https://github.com/kingluo
+
+https://www.zhihu.com/people/jinhua-luo-94
+
 ## Education
 
 * Bachelor, Electronic Information Engineering, South China Agricultural University

@@ -10,7 +10,7 @@ I am good at Linux, TCP/IP, Nginx, OpenResty, PostgreSQL.
 
 ## Location
 
-Guangzhou, China
+Foshan, China
 
 ## Email
 
@@ -41,6 +41,7 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ## Projects
 
+* [lua-resty-ffi - provides an efficient and generic API to do hybrid programming in openresty with mainstream languages](#lua-resty-ffi)
 * [pg_watch_demo - re-implement an complete (even better) etcd watch mechanism in postgresql](#pg_watch_demo)
 * [lua-resty-inspect - make dynamic and arbitrary breakpoint in your nginx lua code and inspect the info](#lua-resty-inspect)
 * [pgcat - Enhanced postgresql logical replication](#pgcat)
@@ -59,6 +60,22 @@ https://www.zhihu.com/people/jinhua-luo-94
 * [Server Bootstrap CD](#server-bootstrap-cd)
 * [Others](#others)
 
+### lua-resty-ffi
+
+*2022 open-source project*
+
+https://github.com/kingluo/lua-resty-ffi
+
+lua-resty-ffi provides an efficient and generic API to do hybrid programming in openresty with mainstream languages
+(Go, Python, Java, Rust, etc.).
+
+**Features:**
+* nonblcking, in coroutine way
+* simple but extensible interface, supports any C ABI compliant language
+* once and for all, no need to write C/Lua codes to do coupling anymore
+* high performance, faster than unix domain socket way
+* generic loader library for python/java
+* any serialization message format you like
 
 ### pg_watch_demo
 

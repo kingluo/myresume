@@ -328,7 +328,7 @@ The system is based on a dedicated MVC framework. The backend is written in Bash
 
 It makes use of many techniques, e.g. initrd, squashfs, unionfs, sysfs (devices scanning), OS installer hijacking (for Linux, it injects the drivers and post-installation scripts into the target initrd and installer, e.g. redhat Anaconda; for Windows, it constructs a special freedos image to launch auto-installtion).
 
-### Others
+### Other open-source works
 
 *2005-2008 GuangDong Linux Center*
 
@@ -338,9 +338,7 @@ I submit a transparent proxy patch to the project author.
 
 http://archive.linuxvirtualserver.org/html/lvs-users/2006-11/msg00261.html
 
-http://thread.gmane.org/gmane.linux.network/50686
-
-http://thread.gmane.org/gmane.linux.network/51121
+https://archive.linuxvirtualserver.org/html/lvs-users/2007-01/msg00009.html
 
 #### drbd
 
@@ -350,12 +348,12 @@ http://lists.linbit.com/pipermail/drbd-cvs/2006-February/000993.html
 
 #### u-boot
 
-I implement the shell history extension and new hardware ports.
+I implemented the shell history extension and new hardware ports.
 
 http://u-boot.10912.n7.nabble.com/My-3-patches-td2038.html
 
 #### ibox livecd
 
-I create my own linux distribution based on Gentoo at school:
+I created my own Linux distribution based on Gentoo at school:
 
 http://distrowatch.com/table.php?distribution=ibox

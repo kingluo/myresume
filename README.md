@@ -4,7 +4,7 @@
 
 My name is JinHua Luo (罗锦华).
 
-I am a senior C/C++/Python/Golang/Lua/SQL/Bash programmer and system architect, with 18 years of development experience.
+I am a senior C/C++/Golang/Python/Lua/SQL/Bash programmer and system architect, with 18 years of development experience.
 
 I am good at Linux, TCP/IP, Nginx, OpenResty, and PostgreSQL.
 
@@ -32,12 +32,12 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ## Career
 
-* 2022 - 2023, [API7](https://api7.ai/)
-* 2019 - 2022, PostgreSQL consultant
-* 2018 - 2019, Ericsson
-* 2017 - 2018, Kugou Music
-* 2008 - 2016, Elephant Talk
-* 2005 - 2008, Guangdong Linux Center
+* 2022 - 2023 [API7](https://api7.ai/)
+* 2019 - 2022 _PostgreSQL consultant (Self-employment)_
+* 2018 - 2019 Ericsson
+* 2017 - 2018 Kugou Music
+* 2008 - 2016 Elephant Talk
+* 2005 - 2008 Guangdong Linux Center
 
 ## Projects
 

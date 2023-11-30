@@ -4,9 +4,9 @@
 
 My name is JinHua Luo (罗锦华).
 
-I am a senior C/C++/Python/Golang/Lua/SQL/Bash programmer and system architect, with 17 years development experience.
+I am a senior C/C++/Python/Golang/Lua/SQL/Bash programmer and system architect, with 18 years of development experience.
 
-I am good at Linux, TCP/IP, Nginx, OpenResty, PostgreSQL.
+I am good at Linux, TCP/IP, Nginx, OpenResty, and PostgreSQL.
 
 ## Location
 
@@ -32,7 +32,7 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ## Career
 
-* 2022 [API7](https://api7.ai/)
+* 2022 - 2023, [API7](https://api7.ai/)
 * 2019 - 2022, PostgreSQL consultant
 * 2018 - 2019, Ericsson
 * 2017 - 2018, Kugou Music
@@ -41,10 +41,10 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ## Projects
 
-* [lua-resty-ffi - provides an efficient and generic API to do hybrid programming in openresty with mainstream languages](#lua-resty-ffi)
-* [pg_watch_demo - re-implement an complete (even better) etcd watch mechanism in postgresql](#pg_watch_demo)
-* [lua-resty-inspect - make dynamic and arbitrary breakpoint in your nginx lua code and inspect the info](#lua-resty-inspect)
-* [pgcat - Enhanced postgresql logical replication](#pgcat)
+* [lua-resty-ffi - provides an efficient and generic API to do hybrid programming in openresty](#lua-resty-ffi)
+* [pg_watch_demo - re-implement a complete (even better) etcd watch mechanism in postgresql](#pg_watch_demo)
+* [lua-resty-inspect - make dynamic and arbitrary breakpoints in your nginx lua code and inspect the info](#lua-resty-inspect)
+* [pgcat - Enhanced PostgreSQL logical replication](#pgcat)
 * [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
 * [Openresty worker-thread api](#openresty-worker-thread-api)
 * [Mysql Proxy](#mysql-proxy)
@@ -56,9 +56,9 @@ https://www.zhihu.com/people/jinhua-luo-94
 * [boost-reflection](#boost-reflection)
 * [Diameter stack](#diameter-stack)
 * [SIGTRAN stack](#sigtran-stack)
-* [High performance CORBA implementation](#high-performance-corba-implementation)
+* [High-performance CORBA implementation](#high-performance-corba-implementation)
 * [Server Bootstrap CD](#server-bootstrap-cd)
-* [Others](#others)
+* [Other open-source works](#other-open-source-works)
 
 ### lua-resty-ffi
 
@@ -70,11 +70,11 @@ lua-resty-ffi provides an efficient and generic API to do hybrid programming in 
 (Go, Python, Java, Rust, etc.).
 
 **Features:**
-* nonblcking, in coroutine way
+* nonblocking, in a coroutine way
 * simple but extensible interface, supports any C ABI compliant language
 * once and for all, no need to write C/Lua codes to do coupling anymore
 * high performance, faster than unix domain socket way
-* generic loader library for python/java
+* generic loader library for Python/java
 * any serialization message format you like
 
 ### pg_watch_demo
@@ -83,15 +83,15 @@ lua-resty-ffi provides an efficient and generic API to do hybrid programming in 
 
 https://github.com/kingluo/pg_watch_demo
 
-With trigger and notify, you could re-implement an complete (even better) etcd watch mechanism in postgresql.
+With trigger and notify, you could re-implement a complete (even better) etcd watch mechanism in Postgresql.
 
-It mimics below etcd features:
+It mimics etcd features:
 
 * watch
-* read value in historical data, i.e. get key by revision
+* read the value in historical data, i.e. get the key by revision
 * set key
 * del key
-* compact, either by revision or date retention
+* Compact, either by revision or date retention
 
 ### lua-resty-inspect
 
@@ -99,11 +99,11 @@ It mimics below etcd features:
 
 https://github.com/kingluo/lua-resty-inspect/
 
-It's useful to set arbitrary breakpoint in any lua file to inspect the context infomation, e.g. print local variables if some condition satisfied.
+It's useful to set arbitrary breakpoints in any lua file to inspect the context information, e.g. print local variables if some condition is satisfied.
 
-In this way, you don't need to modify the source codes of your project, and just get diagnose infomation on demand, i.e. dynamic logging.
+In this way, you don't need to modify the source codes of your project and just get diagnose information on demand, i.e. dynamic logging.
 
-This library supports setting breakpoints within both interpretd function and jit compiled function. The breakpoint could be at any position within the function. The function could be global/local/module/ananymous.
+This library supports setting breakpoints within both interpreted function and the jit compiled function. The breakpoint could be at any position within the function. The function could be global/local/module/anonymous.
 
 It works for luajit2.1 or lua5.1.
 
@@ -113,29 +113,29 @@ It works for luajit2.1 or lua5.1.
 
 https://github.com/kingluo/pgcat
 
-Enhanced postgresql logical replication.
+Enhanced Postgresql logical replication.
 
-Similiar to [BDR](https://www.enterprisedb.com/docs/bdr/latest/), but it does not depend on specific postgresql version and non-invasive.
+Similar to [BDR](https://www.enterprisedb.com/docs/bdr/latest/), it does not depend on a specific Postgresql version and is non-invasive.
 
-The postgresql built-in logicial replication has below shortages:
+The Postgresql built-in logical replication has below shortages:
 
-* only support base table as replication target
-* do not filter any origin, which will cause bi-directional dead loop
+* only support base table as a replication target
+* do not filter any origin, which will cause a bi-directional dead loop
 * could not do table name mapping
 * no conflict resolution
 
 pgcat makes below enhancements:
 
-* supports any table type as replication target
+* supports any table type as a replication target
 e.g. view, fdw, partitioned table, citus distributed table
 * only replicates local changes
 so that you could make bi-directional replication,
-e.g. replicates data between two datacenter
+e.g. replicates data between two data centers
 * table name mapping
 * optional lww (last-writer-win) conflict resolution
-* save replication progress in table, so that it would be logged
+* save replication progress in a table, so that it will be logged
 when subscriber failovers, it would retain the progress. In contrast,
-the built-in logical replication of pg saves the progress in non-logged file.
+the built-in logical replication of pg saves the progress in a non-logged file.
 
 ### Cassandra Encryption query handler
 
@@ -145,9 +145,9 @@ the built-in logical replication of pg saves the progress in non-logged file.
 
 Implements encryption via Cassandra Query Handler.
 
-* encrypt specific fields of tables transparently from client
-* enable encrypt variant implmentations, e.g. aes, fuzz
-* only the authorized users could access the encrypted fields
+* encrypt specific fields of tables transparently from the client
+* enable encrypt variant implementations, e.g. AES, fuzz
+* Only authorized users could access the encrypted fields
 * support alias and composite types
 * enable configuration updates on runtime
 
@@ -171,8 +171,8 @@ https://github.com/openresty/lua-nginx-module#ngxrun_worker_thread
 *written in golang*
 
 * Auto/Manual failover (supports master-master)
-* Write at master, Read at slaves in load-balance manner
-* Sharding (supports perpared statement)
+* Write at master, Read at slaves in a load-balance manner
+* Sharding (supports prepared statement)
 * Data re-balancing among Nodes
 * Configuration and Metadata stored on zookeeper, could be changed on runtime
 
@@ -180,31 +180,31 @@ https://github.com/openresty/lua-nginx-module#ngxrun_worker_thread
 
 *2015 open-source project*
 
-Pure lua io framework, which re-implements the functionalities and performance of nginx and ngx_lua.
+Pure Lua io framework, which re-implements the functionalities and performance of nginx and ngx_lua.
 
-Why reinvent the wheel? Well, the nginx and ngx_lua is renowned at effciency and extensible, but they are written in C language, so you need to be as smart as the authors to contribute codes. What if the core is written in pure lua language, but without any effciency tradeoff? Then not only the web apps are extensible, but also the server core is extensible at ease by any levels of developers!
+Why reinvent the wheel? Well, the nginx and ngx_lua are renowned for efficiency and extensibility, but they are written in C language, so you need to be as smart as the authors to contribute codes. What if the core is written in pure Lua language, but without any efficiency tradeoff? Then not only the web apps are extensible, but also the server core is extensible at ease by any level of developers!
 
-The Luajit is a perfect JIT engine to improve lua performance, so with dedicated and luajit-oriented design, the luajit.io would reassemble the advantages of nginx and ngx_lua, but provides extra benefit: simple and extensible at the core.
+The Luajit is a perfect JIT engine to improve Lua performance, so with a dedicated and luajit-oriented design, the luajit.io would reassemble the advantages of nginx and ngx_lua, but provides extra benefit: simple and extensible at the core.
 
-Just to emphasize that luajit.io already implements most common functionalities of http1.1, e.g. gzip, ssl, if_not_modified. Besides http, you could use it as general tcp server, just like what ngx_stream module does.
+Just to emphasize luajit.io already implements the most common functionalities of http1.1, e.g. gzip, SSL, if_not_modified. Besides HTTP, you could use it as a general tcp server, just like what ngx_stream module does.
 
-luajit.io simulates nginx architecture, including master-workers model, ip/port/domain matching, location matching (besides the nginx location directive semantics, you could define function to do arbitrary matching), response filters chaining, signal controlling and configuration file syntax.
+luajit.io simulates nginx architecture, including master-workers model, ip/port/domain matching, location matching (besides the Nginx location directive semantics, you could define a function to do arbitrary matching), response filters chaining, signal controlling, and configuration file syntax.
 
-And, the API is compatible with ngx_lua, including exec/redirect flow control, shared memory dictionary, dfa-pattern socket read, enhanced coroutine api, etc, so that luajit.io could reuse almost all lua-resty-* libraries directly (with some trivial naming changes).
+And, the API is compatible with ngx_lua, including exec/redirect flow control, shared memory dictionary, DFA-pattern socket read, enhanced coroutine API, etc, so that luajit.io could reuse almost all lua-resty-* libraries directly (with some trivial naming changes).
 
-See https://github.com/kingluo/luajit.io for detail.
+See https://github.com/kingluo/luajit.io for details.
 
 ### Image Server Cluster Refactoring
 
 *2015 UCWeb*
 
-The image server is used to convert image formats, which is CPU-bound app. The time cost per request ranges from 5ms to 5s, randomly.
+The image server is used to convert image formats, which is a CPU-bound program. The time cost per request ranges from 5ms to 5s, randomly.
 
-In the first release, the front load balancer dispatch http requests from app servers (clients) to the backend image servers. The Apache TrafficServer runs at the backend server: the master thread dispatches http request to the thread pool in round-robin way. The number of the thread pool is the number of the CPU cores of the machine. The flaw of this design is that the requests are not dispatched among the CPU cores of machines evenly, then the average latency is high and unstable.
+In the first release, the front load balancer dispatches HTTP requests from app servers (clients) to the backend image servers. The Apache TrafficServer runs at the backend server: the master thread dispatches HTTP requests to the thread pool in a round-robin way. The number of the thread pool is the number of the CPU cores of the machine. The flaw of this design is that the requests are not dispatched among the CPU cores of machines evenly, then the average latency is high and unstable.
 
-Think that at given moment, some threads get many request pending in the thread specific queue, while the other threads are idle but those pending requests could not be migrated to them.
+Think that at a given moment, some threads get many requests pending in the thread-specific queue, while the other threads are idle but those pending requests could not be migrated to them.
 
-How to improve it? Well, each thread is only avaliable only when they finished the previous request, it should announce its avaliabltiy to clients. So I use one redis server, create a queue on it, and apply the producer-consumer model to dispatch the requests. When the thread is avaliable, it push itself (ip/port info) to the queue. Each client would pop the queue to determine the handling thread. The pop operation is blocking for the redis queue, and the overhead is small. The http protocol between the client and the server is replaced by simple and clear protocol.
+How to improve it? Well, each thread is available only when they finish the previous request, it should announce its availability to clients. So I use one Redis server, create a queue on it, and apply the producer-consumer model to dispatch the requests. When the thread is available, it pushes itself (ip/port info) to the queue. Each client would pop the queue to determine the handling thread. The pop operation is blocking the Redis queue, and the overhead is small. The HTTP protocol between the client and the server is replaced by a simple and clear protocol.
 
 After refactoring, the overall performance of the cluster improves a lot!
 
@@ -212,7 +212,7 @@ After refactoring, the overall performance of the cluster improves a lot!
 
 *2016 Elephanttalk*
 
-Diameter Route Agent is like a full functional IP router, but it's diameter message dedicated router. The highlight of this project is you could use lua script to extend the route logic:
+Diameter Route Agent is like a fully functional IP router, but it's a diameter message dedicated router. The highlight of this project is you could use Lua script to extend the route logic:
 
 * host validation logic
 * message routing logic, e.g. round-robin, weighted load-balance
@@ -222,35 +222,35 @@ Diameter Route Agent is like a full functional IP router, but it's diameter mess
 
 *2014-2015 Elephanttalk*
 
-The SMSC is a message router. The message originator or terminator could be mobile phone or sme (short mesasge entity) via smpp or http. The most common usage is phone-to-phone message. And the sme provides vendor specific service, For example, you could send message from you phone to a short number to query infomation of your bank account. Then the bank could in turn send back the result message to the phone.
+The SMSC is a message router. The message originator or terminator could be a mobile phone or SME (short message entity) via SMPP or HTTP. The most common usage is phone-to-phone messages. And the same provides vendor-specific service, For example, you could send a message from your phone to a short number to query information about your bank account. Then the bank could in turn send back the result message to the phone.
 
-The SMSC sits between the GSM network and the Internet. For the GSM, it communcates with various network entities, e.g. MSC, HLR to complete the MO and MT operations. Similarly, each service party (sme) connects to the SMSC via smpp or http protocol.
+The SMSC sits between the GSM network and the Internet. For the GSM, it communicates with various network entities, e.g. MSC, and HLR to complete the MO and MT operations. Similarly, each service party (SME) connects to the SMSC via SMPP or http protocol.
 
-The PostgreSQL is used to store persistent data, e.g. sms and processing records, And it also do the message delivery scheduling, handling retry rules, routing rules and barring rules. The database would pg_notify the protocol adapter to do the delivery task. Table partitioning is used to archive history messages in month. The logic is written in pl/pgsql.
+PostgreSQL is used to store persistent data, e.g. SMS and processing records, And it also does the message delivery scheduling, handling retry rules, routing rules, and barring rules. The database would pg_notify the protocol adapter to do the delivery task. Table partitioning is used to archive history messages in a month. The logic is written in pl/pgsql.
 
 ### CDMA SSP
 
 *2014-2015 Elephanttalk*
 
-CDMA SSP is service switching point, which connects to the SCP to apply pre-paid accounting, call forwarding, play announcement, Three-Way Calling, and other customized services upon the voice process.
+CDMA SSP is a service switching point, which connects to the SCP to apply pre-paid accounting, call forwarding, play announcement, Three-Way Calling, and other customized services upon the voice process.
 
-The lightspot of this project is that I embed the luajit upon the low-level protocol stack, so that we could implement the business logics in pure lua. The system is then extensible at ease for any usecase.
+The light spot of this project is that I embedded the luajit upon the low-level protocol stack so that we could implement the business logic in pure Lua. The system is then extensible at ease for any use case.
 
-I implement the WIN protocol (CDMA intelligent network) in the SIGTRAN stack, with API exported via CORBA. We have ton of test cases, while C lanuage is not so productive. The lua is good embedding language, simple but powerful. And the luajit's ffi could access the idl generated structures without conversion. Then I decide to wrap the whole ssp core with lua API.
+I implement the WIN protocol (CDMA intelligent network) in the SIGTRAN stack, with API exported via CORBA. We have a ton of test cases, while C language is not so productive. Lua is a good embedding language, simple but powerful. And the luajit's ffi could access the IDL-generated structures without conversion. Then I decided to wrap the whole SSP core with Lua API.
 
-Just like ngx_lua, the CORBA C API (generated from the idl) are asynchronous, but the lua API is coroutine based, synchronous and nonblocking. The lua API is high-level, which may involves multiple low-level CORBA operations invocations, for example, opening dialog, sending operatioin, handleing operation callback, closing dialog. The core handles all low-level stuff, e.g. the dialog management, the state machine, and the memory management.
+Just like ngx_lua, the CORBA C API (generated from the IDL) is asynchronous, but the Lua API is coroutine-based, synchronous, and nonblocking. The Lua API is high-level, which may involve multiple low-level CORBA operations invocations, for example, opening dialog, sending operations, handling operation callback, and closing dialog. The core handles all low-level stuff, e.g. the dialog management, the state machine, and the memory management.
 
 ### boost-reflection
 
 *2012-2013 open-source project*
 
-As known, C++ lacks of reflection, which is important when you're buidling a large-scale framework, like Java Spring.
+As known, C++ lacks reflection, which is important when you're building a large-scale framework, like Java Spring.
 
-I bring Java reflection, Java annotations, and Java proxy object into C++ land, in non-intrusive way.
+I bring Java reflection, Java annotations, and Java proxy objects into C++ land, in a non-intrusive way.
 
-It supports all modern compilers, no generator or additional tools needed.
+It supports all modern compilers, no generator or additional tools are needed.
 
-See the github page for source codes:
+See the GitHub page for source codes:
 
 https://github.com/kingluo/boost-reflection
 
@@ -262,9 +262,9 @@ Diameter is an important AAA (Authenticate, Authorize, Accounting) protocol in t
 
 Implemented protocols layers:
 
-* SCTP (kernel based)
+* SCTP (kernel-based)
 * diameter base
-* dcca
+* DCCA
 
 ### SIGTRAN stack
 
@@ -272,33 +272,33 @@ Implemented protocols layers:
 
 SS7 over IP network.
 
-It's the base of telecom networking, just like the role of TCP/IP stack in Internet.
+It's the base of telecom networking, just like the role of TCP/IP stack on the Internet.
 
 Implemented protocols layers:
 
-* SCTP (kernel based)
+* SCTP (kernel-based)
 * M3UA
 * SCCP
 * TCAP
 * MAP / CAP / WIN
 
-### High performance CORBA implementation
+### High-performance CORBA implementation
 
 *2008-2013 Elephanttalk*
 
-CORBA is a well-known RPC standard, but it has below disadvantages:
+CORBA is a well-known RPC standard, but it has disadvantages:
 
 * heavy weighted, e.g. object proxy, message marshaling
 * complex async call extension
-* transport (GIOP) is too strict and low effiencicy
+* transport (GIOP) is too strict and low-efficiency
 
-This project is to design and develop a RPC framework based on simplified and optimized CORBA version, used by components from our product lines.
+This project is to design and develop a RPC framework based on a simplified and optimized CORBA version, used by components from our product lines.
 
 It consists of:
 
-* idl compiler (compile idl into C stubs and skeleton files), written in perl and tcl
-* configuration compiler (tcl)
-* api library
+* IDL compiler (compile IDL into C stubs and skeleton files), written in Perl and TCL
+* configuration compiler (TCL)
+* API library
 * management tools
 * launcher
 * tracker daemon (process tracker, site clustering)
@@ -306,33 +306,33 @@ It consists of:
 Features:
 
 * supporting Linux and Windows
-* application in shared object library, loaded by the launcher
-* configuration via tcl (the schema is defined in idl, and you could retrieve them in C types at runtime)
+* application in the shared object library, loaded by the launcher
+* configuration via tcl (the schema is defined in IDL, and you could retrieve them in C types at runtime)
 * object failover and load-balance
-* fully asynchronous call just like nodejs, as well as tranditional synchronous call
-* make full use of shared memory and unix domain socket
+* fully asynchronous call just like nodejs, as well as traditional synchronous call
+* make full use of shared memory and Unix domain socket
 * address resolution via in-shared-memory distributed db
-* no message marshaling and demarshaling
+* no message marshaling and unmarshaling
 * lz4 compression for large message
-* support CORBA_Any type in idl (think about what golang interface could do)
-* failure aware and callback
+* support CORBA_Any type in IDL (think about what Golang interface could do)
+* failure awareness and callback
 * managed memory access and recycle for call arguments
 
 ### Server Bootstrap CD
 
 *2006 GuangDong Linux Center*
 
-The Bootstrap CD is a special compact disc to guide the Administrators to install OS onto the bare server machine at ease. It boots the bare machine into a special in-memory gentoo linux, which provides installation wizard which guides the user to configure the target OS (Redhat, Suse, Windows) installation, then it installs the OS automatically, and finally after reboot, the user get a full system with OS installed and integrated drivers for the particular machines.
+The Bootstrap CD is a special compact disc to guide the Administrators to install OS onto the bare server machine with ease. It boots the bare machine into a special in-memory Gentoo Linux, which provides an installation wizard that guides the user to configure the target OS (Redhat, Suse, Windows) installation, then it installs the OS automatically, and finally after reboot, the user get a full system with OS installed and integrated drivers for the particular machines.
 
-The system is based on a dedicated MVC framework. The backend is written in Bash scripts following the configuration-driven model of 'portage' (the flexible package management system of Gentoo Linux distribution), while the front-end is written in Java (tomcat). The backend and the front-end are communicated through an .ini file, which is composed of fields used to synchronize the function logic of each other.
+The system is based on a dedicated MVC framework. The backend is written in Bash scripts following the configuration-driven model of 'portage' (the flexible package management system of Gentoo Linux distribution), while the front end is written in Java (tomcat). The backend and the front end are communicated through a .ini file, which is composed of fields used to synchronize the function logic of each other.
 
-It makes use of many techniques, e.g. initrd, squashfs, unionfs, sysfs (devices scanning), OS installer hijacking (for Linux, it injects the drivers and post-installation scripts into the target initrd and installer, e.g. redhat Anaconda; for Windows, it constructs a special freedos image to launch auto-installtion).
+It makes use of many techniques, e.g. initrd, squashfs, unionfs, sysfs (devices scanning), OS installer hijacking (for Linux, it injects the drivers and post-installation scripts into the target initrd and installer, e.g. redhat Anaconda; for Windows, it constructs a special freedos image to launch auto-installation).
 
 ### Other open-source works
 
 *2005-2008 GuangDong Linux Center*
 
-#### lvs
+#### LVS
 
 I submit a transparent proxy patch to the project author.
 
@@ -340,13 +340,13 @@ http://archive.linuxvirtualserver.org/html/lvs-users/2006-11/msg00261.html
 
 https://archive.linuxvirtualserver.org/html/lvs-users/2007-01/msg00009.html
 
-#### drbd
+#### DRBD
 
 I submit some bugfix patches.
 
 http://lists.linbit.com/pipermail/drbd-cvs/2006-February/000993.html
 
-#### u-boot
+#### U-Boot
 
 I implemented the shell history extension and new hardware ports.
 

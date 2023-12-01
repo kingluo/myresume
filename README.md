@@ -4,7 +4,7 @@
 
 My name is JinHua Luo (罗锦华).
 
-I am a senior C/C++/Golang/Python/Lua/SQL/Bash programmer and system architect, with 18 years of development experience.
+I am a senior C/C++/Golang/Python/Rust/SQL/Bash programmer and system architect, with 18 years of development experience.
 
 I am good at Linux, TCP/IP, Nginx, OpenResty, and PostgreSQL.
 

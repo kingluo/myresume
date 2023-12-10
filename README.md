@@ -41,7 +41,9 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ## Projects
 
-### Technical article published on behalf of API7 Corporation
+### Technical articles
+
+*2022-2023 API7*
 
 * What Is OAuth?
 

@@ -41,24 +41,37 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ## Projects
 
-* [lua-resty-ffi - provides an efficient and generic API to do hybrid programming in openresty](#lua-resty-ffi)
-* [pg_watch_demo - re-implement a complete (even better) etcd watch mechanism in postgresql](#pg_watch_demo)
-* [lua-resty-inspect - make dynamic and arbitrary breakpoints in your nginx lua code and inspect the info](#lua-resty-inspect)
-* [pgcat - Enhanced PostgreSQL logical replication](#pgcat)
-* [Cassandra Encryption query handler](#cassandra-encryption-query-handler)
-* [Openresty worker-thread api](#openresty-worker-thread-api)
-* [Mysql Proxy](#mysql-proxy)
-* [luajit.io](#luajitio)
-* [Image Server Cluster Refactoring](#image-server-cluster-refactoring)
-* [Diameter Route Agent](#diameter-route-agent)
-* [GSM SMSC](#gsm-smsc)
-* [CDMA SSP](#cdma-ssp)
-* [boost-reflection](#boost-reflection)
-* [Diameter stack](#diameter-stack)
-* [SIGTRAN stack](#sigtran-stack)
-* [High-performance CORBA implementation](#high-performance-corba-implementation)
-* [Server Bootstrap CD](#server-bootstrap-cd)
-* [Other open-source works](#other-open-source-works)
+### Technical article published on behalf of API7 Corporation
+
+* What Is OAuth?
+
+https://www.apiseven.com/blog/what-is-oauth
+
+https://api7.ai/blog/apisix-supports-oauth-and-oidc
+
+* Apache APISIX Lua inspect plugin
+
+https://www.apiseven.com/blog/apisix-inspect-plugin
+
+https://api7.ai/blog/apisix-lua-dynamic-debugging-plugin
+
+* etcd vs PostgreSQL
+
+https://www.apiseven.com/blog/etcd-vs-postgresql
+
+https://api7.ai/blog/etcd-vs-postgresql
+
+*　SOAP-to-REST (zero code)
+
+https://www.apiseven.com/blog/api-7-enterprise-soap
+
+https://api7.ai/blog/apisix-soap-to-rest-plugin
+
+* APISIX: Be FIPS 140-2 Compliant
+
+https://www.apiseven.com/blog/api7-enterprise-fips
+
+https://api7.ai/blog/apisix-fips-140-2
 
 ### lua-resty-ffi
 

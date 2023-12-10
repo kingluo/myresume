@@ -12,8 +12,6 @@ Familiar with programming languages: C/C++, Golang, Python, Rust, Lua, SQL, and 
 
 Proficient in using gdb and systemtap to analyze program problems.
 
-Please view my English resume: https://github.com/kingluo/myresume
-
 ## Location
 
 Foshan, China

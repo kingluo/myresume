@@ -43,7 +43,7 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ### Technical articles
 
-*2022-2023 API7*
+*2022.10 - 2023.10 API7*
 
 * What Is OAuth?
 
@@ -74,6 +74,121 @@ https://api7.ai/blog/apisix-soap-to-rest-plugin
 https://www.apiseven.com/blog/api7-enterprise-fips
 
 https://api7.ai/blog/apisix-fips-140-2
+
+### Merge QUIC patches
+
+*2023.08 - 2023.09 API7*
+
+Integrate nginx-1.25.x to support QUIC (HTTP/3) downstream of apisix.
+
+Implemented a testing framework based on the latest version of curl for HTTP/3 to test whether HTTP/3 is compatible with the current core functions of APISIX.
+
+https://github.com/kingluo/apisix/compare/master...kingluo:apisix:quic-tmp2
+
+https://github.com/kingluo/apisix-build-tools/compare/master...kingluo:apisix-build-tools:quic-tmp2
+
+https://github.com/kingluo/curl-test
+
+### Optimize APISIX etcd watch
+
+*2023.05 - 2023.05 API7*
+
+apisix uses HTTP to connect etcd to obtain configuration updates, and apisix has more than ten kinds of resources. Each resource has a TCP connection, and the TCP connection of each worker process is independent, so there are many TCP connections between apisix and etcd, which affects Scalability.
+
+This project aims to reconstruct the logic of incremental update configuration of etcd watch, merge multiple HTTP connections into one connection, and improve the real-time performance of watch so that similar watch effects can be achieved without introducing GRPC to connect etcd.
+
+https://github.com/apache/apisix/pull/9456
+
+https://github.com/kingluo/etcd-benchmark
+
+### SOAP-to-REST plugin
+
+*2023.04 - 2023.04 API7*
+
+Implement the SOAP proxy function, convert the downstream RESTful request into a SOAP XML request based on the WSDL file, send it to the upstream Web Service, and then convert the SOAP response into a RESTful response and return it to the downstream.
+
+The biggest advantage of this project is that it can automatically download and analyze WSDL files, and automatically create proxy objects for each operation in it. The object method parameters are all Python objects and can be converted to and from JSON format. Compared with traditional products, there is no need to manually write conversion templates or codes for each WSDL file, which greatly improves development efficiency and reduces error rates.
+
+https://github.com/kingluo/lua-resty-ffi-soap
+
+### MTLS whitelist
+
+*2023.04 - 2023.04 API7*
+
+According to the SSL standard, in the case of MTLS (mutual TLS, two-way certificate), during the SSL handshake, if the client certificate is invalid, an alert will be returned to the client immediately and the creation of the SSL session will be interrupted. However, in reality, there is a practical need to have a whitelist of URLs (which can also be headers). If the URL visited by the client is in the whitelist, the validity of the client certificate will not be checked, and other URL requests will return HTTP 400 error codes.
+
+This project implements the above whitelist logic by setting the SSL handshake callback function through OPENSSL's SSL_CTX_set_cert_cb:
+
+https://www.openssl.org/docs/man3.1/man3/SSL_CTX_set_cert_cb.html
+
+Product documentation:
+
+https://apisix.apache.org/docs/apisix/tutorials/client-to-apisix-mtls/#mtls-bypass-based-on-regular-expression-matching-against-uri
+
+Source code link:
+
+https://github.com/apache/apisix/pull/9322
+
+### Enable FIPS
+
+*2023.03 - 2023.03 API7*
+
+Integrate openssl-3.0, enable FIPS mode, and fix incompatible function paths.
+
+https://www.openssl.org/docs/fips.html
+
+https://github.com/apache/apisix/pull/8298
+
+### body transformer plugin
+
+*2023.01 - 2023.01 API7*
+
+The plug-in recognizes the content format of request and response (currently supports XML and JSON), and then converts it into the content required by the customer through templates.
+
+https://apisix.apache.org/docs/apisix/plugins/body-transformer/
+
+### openresty code contributions
+
+*2022.01 - 2023.01 API7*
+
+* bugfix: define busy_bufs per cosocket #2119
+https://github.com/openresty/lua-nginx-module/pull/2119
+
+* bugfix: avoid buf double free in ngx.print if lua body filter enabled #2115
+https://github.com/openresty/lua-nginx-module/pull/2115
+
+* feature: add shdict APIs into worker thread #2074
+https://github.com/openresty/lua-nginx-module/pull/2074
+
+* api inject bugfix #1996
+https://github.com/openresty/lua-nginx-module/pull/1996
+
+### APISIX authentication plugins
+
+*2022.08 - 2023.12 API7*
+
+* feat(ldap-auth): use lua-resty-ldap instead of lualdap #7590
+https://github.com/apache/apisix/pull/7590
+
+* feat(saml-auth): add saml-auth plugin #7827
+https://github.com/apache/apisix/pull/7827
+
+* feat: add cas-auth plugin #7932
+https://github.com/apache/apisix/pull/7932
+
+### Code contributions to APISIX upstream library
+
+*2022.11 - 2023.11 API7*
+
+* Prometheus memory leak problem
+
+https://github.com/apache/apisix/issues/9627
+
+https://github.com/knyar/nginx-lua-prometheus/pull/151
+
+* Prometheus shared memory read and write failure problem
+
+https://github.com/knyar/nginx-lua-prometheus/pull/147
 
 ### lua-resty-ffi
 

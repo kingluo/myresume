@@ -4,9 +4,15 @@
 
 My name is JinHua Luo (罗锦华).
 
-I am a senior C/C++/Golang/Python/Rust/SQL/Bash programmer and system architect, with 18 years of development experience.
+I have 18 years of work experience, love computer software technology, and like to delve into and overcome technical problems.
 
-I am good at Linux, TCP/IP, Nginx, OpenResty, and PostgreSQL.
+Mainly engaged in server back-end development, familiar with Linux, TCP/IP, Nginx, PostgreSQL, and Flask.
+
+Familiar with programming languages: C/C++, Golang, Python, Rust, Lua, SQL, and Bash.
+
+Proficient in using gdb and systemtap to analyze program problems.
+
+Please view my English resume: https://github.com/kingluo/myresume
 
 ## Location
 

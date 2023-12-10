@@ -169,7 +169,7 @@ https://github.com/openresty/lua-nginx-module/pull/1996
 
 ### APISIX authentication plugins
 
-*2022.08 - 2023.12 API7*
+*2022.08 - 2022.12 API7*
 
 * feat(ldap-auth): use lua-resty-ldap instead of lualdap #7590
 https://github.com/apache/apisix/pull/7590
@@ -182,7 +182,7 @@ https://github.com/apache/apisix/pull/7932
 
 ### Code contributions to APISIX upstream library
 
-*2022.11 - 2023.11 API7*
+*2022.11 - 2022.11 API7*
 
 * Prometheus memory leak problem
 

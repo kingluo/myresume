@@ -85,15 +85,11 @@ https://api7.ai/blog/apisix-fips-140-2
 
 *2023.08 - 2023.09 API7*
 
-Integrate nginx-1.25.x to support QUIC (HTTP/3) downstream of apisix.
+Ported nginx-1.25 to APISIX to support downstream QUIC (HTTP/3).
 
-Implemented a testing framework based on the latest version of curl for HTTP/3 to test whether HTTP/3 is compatible with the current core functions of APISIX.
+Furthermore, based on the latest version of curl, I designed and implemented a simple but flexible testing framework:
 
-https://github.com/kingluo/apisix/compare/master...kingluo:apisix:quic-tmp2
-
-https://github.com/kingluo/apisix-build-tools/compare/master...kingluo:apisix-build-tools:quic-tmp2
-
-https://github.com/kingluo/curl-test
+https://github.com/kingluo/burl
 
 ### Optimize APISIX etcd watch
 

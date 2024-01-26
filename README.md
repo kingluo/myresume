@@ -24,7 +24,7 @@ luajit.io@gmail.com
 
 ## Links
 
-www.linkedin.com/in/jinhua-luo-b52b6bbb
+https://www.linkedin.com/in/jinhua-luo-b52b6bbb/
 
 https://github.com/kingluo
 

@@ -47,24 +47,24 @@ https://www.zhihu.com/people/jinhua-luo-94
   * Write technical articles on various topics
   * on call, handle issues in Slack and GitHub
 
-* 2019 - 2022 _PostgreSQL consultant (Self-employment)_
+* 2019 - 2022 **_PostgreSQL consultant (Self-employment)_**
 
   Work for European and American companies:
   * Postgresql cluster, cross-DC replication, pg_raft
   * Transparent, horizontal scaling shards
 
-* 2018 - 2019 Ericsson
+* 2018 - 2019 **Ericsson**
   * Cassandra development
 
-* 2017 - 2018 Kugou Music
+* 2017 - 2018 **Kugou Music**
   * Mysql Proxy
 
-* 2008 - 2016 Elephant Talk
+* 2008 - 2016 **Elephant Talk**
   * SS7 protocol stack
   * CORBA platform development
   * Telecom function node development, e.g. SMSC, SSP
 
-* 2005 - 2008 Guangdong Linux Center
+* 2005 - 2008 **Guangdong Linux Center**
   * Embedded Linux
   * Linux HA, LVS, DRBD
 

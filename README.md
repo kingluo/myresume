@@ -6,11 +6,11 @@ My name is JinHua Luo (罗锦华).
 
 I have 18 years of work experience, love computer software technology, and like to delve into and overcome technical problems.
 
-Mainly engaged in server back-end development, familiar with Linux, TCP/IP, Nginx, PostgreSQL, and Flask.
+Mainly engaged in server back-end development, familiar with Linux, TCP/IP, Nginx/Envoy, PostgreSQL, and Flask.
 
-Familiar with programming languages: C/C++, Golang, Python, Rust, Lua, SQL, and Bash.
+Familiar with programming languages: C/C++, Golang, Python, Lua, SQL, and Bash.
 
-Proficient in using gdb and systemtap to analyze program problems.
+Proficient in using gdb, eBPF, and Systemtap to analyze program problems.
 
 ## Location
 
@@ -69,7 +69,7 @@ https://www.apiseven.com/blog/etcd-vs-postgresql
 
 https://api7.ai/blog/etcd-vs-postgresql
 
-*　SOAP-to-REST (zero code)
+* SOAP-to-REST (zero code)
 
 https://www.apiseven.com/blog/api-7-enterprise-soap
 
@@ -202,6 +202,7 @@ lua-resty-ffi provides an efficient and generic API to do hybrid programming in 
 (Go, Python, Java, Rust, etc.).
 
 **Features:**
+
 * nonblocking, in a coroutine way
 * simple but extensible interface, supports any C ABI compliant language
 * once and for all, no need to write C/Lua codes to do coupling anymore

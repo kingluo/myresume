@@ -6,7 +6,7 @@ My name is JinHua Luo (罗锦华).
 
 I have 18 years of work experience, love computer software technology, and like to delve into and overcome technical problems.
 
-Mainly engaged in server back-end development, familiar with Linux, TCP/IP, Nginx/Envoy, PostgreSQL, and Flask.
+Mainly engaged in server back-end development, familiar with Linux, TCP/IP, Nginx, Envoy, PostgreSQL, and Flask.
 
 Familiar with programming languages: C/C++, Golang, Python, Lua, SQL, and Bash.
 
@@ -18,17 +18,15 @@ Foshan, China
 
 ## Email
 
-home_king@163.com
-
 luajit.io@gmail.com
 
 ## Links
 
+http://luajit.io
+
 https://www.linkedin.com/in/jinhua-luo-b52b6bbb/
 
 https://github.com/kingluo
-
-http://luajit.io
 
 https://www.zhihu.com/people/jinhua-luo-94
 
@@ -38,12 +36,37 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 ## Career
 
-* 2022 - 2023 [API7](https://api7.ai/)
+* 2022 - 2023 **API7 https://api7.ai/**
+
+  Develop and maintain Apache project APISIX (a popular open-source API gateway):
+  
+  https://github.com/apache/apisix/
+  
+  * Refactor the core code and write new plug-ins
+  * Customer SLA support (such as Honor, Geely, vivo)
+  * Write technical articles on various topics
+  * on call, handle issues in Slack and GitHub
+
 * 2019 - 2022 _PostgreSQL consultant (Self-employment)_
+
+  Work for European and American companies:
+  * Postgresql cluster, cross-DC replication, pg_raft
+  * Transparent, horizontal scaling shards
+
 * 2018 - 2019 Ericsson
+  * Cassandra development
+
 * 2017 - 2018 Kugou Music
+  * Mysql Proxy
+
 * 2008 - 2016 Elephant Talk
+  * SS7 protocol stack
+  * CORBA platform development
+  * Telecom function node development, e.g. SMSC, SSP
+
 * 2005 - 2008 Guangdong Linux Center
+  * Embedded Linux
+  * Linux HA, LVS, DRBD
 
 ## Projects
 

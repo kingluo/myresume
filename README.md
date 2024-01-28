@@ -38,18 +38,16 @@ https://www.zhihu.com/people/jinhua-luo-94
 
 * 2022 - 2023 **API7 https://api7.ai/**
 
-  Develop and maintain Apache project APISIX (a popular open-source API gateway):
-  
+  Develop and maintain Apache project APISIX (open-source API gateway):
+
   https://github.com/apache/apisix/
-  
+
   * Refactor the core code and write new plug-ins
   * Customer SLA support (such as Honor, Geely, vivo)
   * Write technical articles on various topics
   * on call, handle issues in Slack and GitHub
 
 * 2019 - 2022 **_PostgreSQL consultant (Self-employment)_**
-
-  Work for European and American companies:
   * Postgresql cluster, cross-DC replication, pg_raft
   * Transparent, horizontal scaling shards
 

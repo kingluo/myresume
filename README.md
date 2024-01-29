@@ -219,7 +219,7 @@ https://github.com/knyar/nginx-lua-prometheus/pull/147
 
 https://github.com/kingluo/lua-resty-ffi
 
-lua-resty-ffi provides an efficient and generic API to do hybrid programming in openresty with mainstream languages
+lua-resty-ffi provides an efficient and generic API to do hybrid programming in openresty/envoy with mainstream languages
 (Go, Python, Java, Rust, etc.).
 
 **Features:**

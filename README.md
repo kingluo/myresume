@@ -486,7 +486,7 @@ It makes use of many techniques, e.g. initrd, squashfs, unionfs, sysfs (devices 
 
 *2005-2008 GuangDong Linux Center*
 
-#### LVS
+* LVS
 
 I submit a transparent proxy patch to the project author.
 
@@ -494,19 +494,19 @@ http://archive.linuxvirtualserver.org/html/lvs-users/2006-11/msg00261.html
 
 https://archive.linuxvirtualserver.org/html/lvs-users/2007-01/msg00009.html
 
-#### DRBD
+* DRBD
 
 I submit some bugfix patches.
 
 http://lists.linbit.com/pipermail/drbd-cvs/2006-February/000993.html
 
-#### U-Boot
+* U-Boot
 
 I implemented the shell history extension and new hardware ports.
 
 http://u-boot.10912.n7.nabble.com/My-3-patches-td2038.html
 
-#### ibox livecd
+* ibox livecd
 
 I created my own Linux distribution based on Gentoo at school:
 
